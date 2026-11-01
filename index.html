@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>I Love Tea</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #fffaf2;
+      color: #3e3e3e;
+    }
+
+    nav {
+      background-color: #a47148;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li {
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    nav ul li:hover {
+      color: #f4e2d8;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      max-width: 80%;
+    }
+
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .card h3 {
+      margin: 15px 0 10px;
+      font-family: 'Playfair Display', serif;
+    }
+
+    footer {
+      background-color: #a47148;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 28px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <h1>I Love Tea</h1>
+    <ul>
+      <li>Home</li>
+      <li>Types</li>
+      <li>Benefits</li>
+      <li>Gallery</li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <h2>Tea is not just a drink — it's a lifestyle 🍵</h2>
+  </section>
+
+  <section class="section">
+    <h2>Why We Love Tea</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1577971401389-7ae7d9b2a100?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Green Tea">
+        <h3>Refreshing & Rejuvenating</h3>
+        <p>Green tea, chamomile, jasmine — each cup brings a soothing sense of calm and clarity.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1576354302913-9b80dcbbb368?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Chai">
+        <h3>Cultural Connection</h3>
+        <p>From Indian chai to Japanese matcha, tea is deeply woven into global traditions and rituals.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1562158070-622a9a1d65b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Tea Leaves">
+        <h3>Natural & Healthy</h3>
+        <p>Rich in antioxidants and flavor, tea is a natural pick-me-up without the crash.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 I Love Tea. Brewed with ❤️ for tea lovers everywhere.
+  </footer>
+
+</body>
+</html>
